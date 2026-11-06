@@ -94,3 +94,23 @@ body{background:#fff}.page-banner,.work-case,.experience-layout,.experience-orig
 .about-photo{height:auto;display:block;align-self:start;background:#fff;max-width:100%;border:1px solid #e7e7e9}
 .about-photo img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain;object-position:center;mask-image:none;-webkit-mask-image:none;filter:none;opacity:1}
 .about-photo .photo-caption{position:static;color:#62656b;background:#fff;padding:14px 18px;font-size:12px}
+
+/* Give the Work-page Flann diagram its own full-width, evenly spaced layout. */
+#flann .case-right-visual{padding:0;min-height:0;height:auto;background:transparent;overflow:visible;min-width:0;align-self:center}
+#flann .case-right-visual .flann-card-art{display:grid;grid-template-columns:minmax(0,1fr);width:100%;max-width:none;height:auto;min-height:0;gap:16px;padding:28px;box-sizing:border-box}
+#flann .flann-card-top{min-height:64px;gap:6px;margin:0}
+#flann .flann-card-top .flann-brand{font-size:36px;min-height:42px}
+#flann .flann-card-top .flann-brand img{width:38px;height:42px}
+#flann .operator-message{justify-self:end;align-self:auto;max-width:90%;margin:0;padding:12px 16px;font-size:13px;line-height:1.4}
+#flann .knowledge-hub{margin:0;padding:18px 16px}
+#flann .knowledge-hub strong{font-size:14px;line-height:1.4}
+#flann .knowledge-hub small{font-size:11px;line-height:1.5;margin-top:7px}
+#flann .operator-path{font-size:11px;line-height:1.5;margin:0}
+#flann .connected-platforms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:1fr;gap:10px;margin:0;width:100%;min-width:0}
+#flann .connected-platform{display:flex;align-items:center;gap:10px;min-height:66px;padding:12px;min-width:0;font-size:13px;line-height:1.3}
+#flann .connected-platform img{width:26px;height:26px;flex-shrink:0}
+#flann .connected-platform>span{min-width:0;overflow-wrap:normal}
+#flann .connected-platform small{display:block;font-size:10px;line-height:1.4;margin-top:4px;color:#66777a}
+#flann .operator-control{border-top:1px solid #ffffff35;padding-top:13px;font-size:11px;line-height:1.5;margin:0}
+@media(max-width:720px){#flann .case-right-visual .flann-card-art{padding:24px 20px;gap:15px}#flann .connected-platform{gap:8px;padding:10px;min-height:68px;font-size:12px}#flann .connected-platform img{width:24px;height:24px}#flann .connected-platform small{font-size:10px}#flann .knowledge-hub{padding:16px 12px}#flann .knowledge-hub strong{font-size:13px}}
+@media(max-width:360px){#flann .connected-platforms{grid-template-columns:minmax(0,1fr)}#flann .connected-platform{min-height:60px}}
