@@ -72,3 +72,20 @@ body{background:#fff}.page-banner,.work-case,.experience-layout,.experience-orig
 .client-brand-set .brand-on-navy{background:#18234b;border-radius:10px;padding:12px}
 .client-brand-set .brand-on-navy img{width:100%;max-width:100%;height:48px;object-fit:contain}
 @media(max-width:720px){.flann-card-top .flann-brand{font-size:36px}.flann-card-top .flann-brand img{width:36px;height:42px}.odoo-flow-top img{width:170px;height:44px}.projects-grid .brainzyme-brand,.boomerang-brand{width:200px;height:44px}.client-brand-set .brand-on-navy{padding:9px}}
+
+/* Case-study ERP diagram: full padding, responsive nodes and no clipped edges. */
+#odoo .erp-case-visual{background:linear-gradient(125deg,#744a6c 0%,#825988 45%,#456780 100%);padding:32px;min-height:0;height:auto;overflow:visible;align-self:center;min-width:0}
+#odoo .erp-case-visual .odoo-flow{display:grid;gap:18px;width:100%;max-width:480px;min-width:0;margin:0;color:#fff}
+#odoo .erp-case-visual .odoo-flow-top{margin:0;min-height:76px}
+#odoo .erp-case-visual .app-layer{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+#odoo .erp-case-visual .app-layer span{min-width:0;white-space:normal;overflow-wrap:anywhere;padding:14px 8px;font-size:12px}
+#odoo .erp-case-visual .sync-bridge{padding:4px 0;min-width:0}
+#odoo .erp-case-visual .sync-bridge>div{min-width:0}
+#odoo .erp-case-visual .erp-core{min-width:0;padding:20px}
+#odoo .erp-case-visual .erp-modules{grid-template-columns:repeat(2,minmax(0,1fr))}
+#odoo .erp-case-visual .erp-modules span{min-width:0;white-space:normal;padding:13px 9px;font-size:12px}
+#odoo .erp-case-visual .sync-footer{margin:0}
+.project-site-links{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:23px}
+.project-site-links a{font-size:14px;font-weight:650;color:#765c32;border-bottom:1px solid #c8ad80;padding-bottom:3px;line-height:1.5}
+.project-site-links a:hover{color:#342511;border-color:currentColor}
+@media(max-width:720px){#odoo .erp-case-visual{padding:24px 20px}#odoo .erp-case-visual .odoo-flow{gap:16px}#odoo .erp-case-visual .app-layer span{font-size:11px;padding:13px 5px}#odoo .erp-case-visual .erp-core{padding:16px}#odoo .erp-case-visual .erp-modules span{font-size:11px}.project-site-links{gap:12px 20px}}
