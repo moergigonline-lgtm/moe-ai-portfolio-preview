@@ -164,3 +164,11 @@
 .client-brand-set .brand-on-navy{background:#18234b;border-radius:10px;padding:12px}
 .client-brand-set .brand-on-navy img{width:100%;max-width:100%;height:48px;object-fit:contain}
 @media(max-width:720px){.flann-card-top .flann-brand{font-size:36px}.flann-card-top .flann-brand img{width:36px;height:42px}.odoo-flow-top img{width:170px;height:44px}.projects-grid .brainzyme-brand,.boomerang-brand{width:200px;height:44px}.client-brand-set .brand-on-navy{padding:9px}}
+
+/* Unboxed brand strip with consistent optical logo sizes. */
+.client-brand-set .client-brand{background:transparent;border-radius:0;padding:0;width:165px;height:76px}
+.client-brand-set .client-brand img{width:150px;max-width:150px;height:52px;max-height:52px;object-fit:contain;filter:none!important}
+.client-brand-set .client-brand img[src*="newbalance-color"]{width:105px}
+@media(max-width:720px){.client-brand-set .client-brand{width:135px;height:66px}.client-brand-set .client-brand img{width:125px;max-width:125px;height:44px;max-height:44px}.client-brand-set .client-brand img[src*="newbalance-color"]{width:90px}}
+
+.client-brand-set .tahini-brand{position:relative}.client-brand-set .tahini-brand .tahini-wordmark{filter:brightness(0)!important}.client-brand-set .tahini-brand .tahini-icon{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);clip-path:inset(0 0 0 73%);pointer-events:none}
