@@ -89,3 +89,8 @@ body{background:#fff}.page-banner,.work-case,.experience-layout,.experience-orig
 .project-site-links a{font-size:14px;font-weight:650;color:#765c32;border-bottom:1px solid #c8ad80;padding-bottom:3px;line-height:1.5}
 .project-site-links a:hover{color:#342511;border-color:currentColor}
 @media(max-width:720px){#odoo .erp-case-visual{padding:24px 20px}#odoo .erp-case-visual .odoo-flow{gap:16px}#odoo .erp-case-visual .app-layer span{font-size:11px;padding:13px 5px}#odoo .erp-case-visual .erp-core{padding:16px}#odoo .erp-case-visual .erp-modules span{font-size:11px}.project-site-links{gap:12px 20px}}
+
+/* Show the supplied About portrait at its original exposure, without fading. */
+.about-photo{height:auto;display:block;align-self:start;background:#fff;max-width:100%;border:1px solid #e7e7e9}
+.about-photo img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain;object-position:center;mask-image:none;-webkit-mask-image:none;filter:none;opacity:1}
+.about-photo .photo-caption{position:static;color:#62656b;background:#fff;padding:14px 18px;font-size:12px}
