@@ -1,14 +1,22 @@
-# Moe Ergig — AI Automation Portfolio (Approved Reference Restore)
+# Moe Ergig — AI Automation Portfolio
 
-This version restores the **exact screenshot approved in chat on November 6, 2026** as the desktop homepage hero. It uses `assets/approved-hero.webp` as the reference artwork with working navigation and CTA hotspots (the screenshot itself is not a live UI). A native, text-based responsive hero is used for mobile/tablet, with the supplied rooftop photo and workflow cards repositioned below the portrait.
+Static GitHub Pages portfolio for AI automation and integrations roles.
 
-The Work, Experience and About pages are preserved from the previous complete portfolio.
+## Local preview
 
-## Publish
-Upload the files in this folder to a **separate** Netlify project. `index.html` is the homepage. Do not deploy over the SEO portfolio unless explicitly intended.
+Run `python -m http.server 4173` from this directory, then open http://127.0.0.1:4173.
 
-## Editability note
-The desktop hero is an *approved raster design snapshot*, not a fully editable reproduction. Headline, buttons and cards are baked into that desktop artwork. Navigation and buttons are clickable via the transparent HTML hotspot layer and have accessible labels; mobile hero text and cards are native HTML. For future desktop copy changes, either edit the artwork or replace it with a native HTML recreation.
+## Structure
 
-## Truthfulness
-The impact values and task completion percentages visible inside the approved screenshot are **illustrative**; a disclaimer immediately beneath the hero makes this explicit. Do not claim them as verified client outcomes.
+- `index.html` / `home.css`: native responsive homepage, CSS 3D floating hero panels and selected projects.
+- `styles.css`: shared layout and existing supporting page styles.
+- `refresh.css`: white surfaces and typography refinements for supporting pages.
+- `main.js`: accessible mobile navigation and motion-preference-aware hero perspective.
+- `work.html`, `experience.html`, `about.html`: project evidence and professional background.
+- `assets/logos/`: locally served platform SVGs; no logo CDN dependency.
+
+## Content accuracy
+
+Project descriptions are drawn from the existing portfolio. Project names indicate experience, not endorsements. Platform experience varies; project-specific tools are identified on each project. Workflow illustrations are explanatory, not live client dashboards or measured outcomes. The website-editing agent is described as sandbox-tested. No new client performance claims or testimonials are introduced.
+
+The former raster hero remains in assets as a design reference; the homepage no longer uses it or transparent hotspots.
