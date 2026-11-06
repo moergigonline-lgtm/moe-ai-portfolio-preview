@@ -1,0 +1,31 @@
+name: Diagnose public Pages URL
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect actual Pages configuration
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "PAGES API:"
+          gh api repos/${{ github.repository }}/pages --jq '{html_url, status, cname, build_type, source, public}' || true
+      - name: DNS and HTTP checks
+        run: |
+          echo "DNS:"
+          getent ahostsv4 moergigonline-lgtm.github.io || true
+          for u in \
+            "https://moergigonline-lgtm.github.io/moe-ai-portfolio-preview/" \
+            "https://moergigonline-lgtm.github.io/moe-ai-portfolio-preview/index.html" \
+            "https://moergigonline-lgtm.github.io/moe-ai-portfolio-preview/assets/favicon.svg"; do
+            echo "Testing $u"
+            curl -sSL --max-time 30 -o /tmp/test-body -w "HTTP=%{http_code} IP=%{remote_ip} FINAL=%{url_effective} BYTES=%{size_download}\\n" "$u" || true
+            head -c 220 /tmp/test-body || true
+            echo
+          done
