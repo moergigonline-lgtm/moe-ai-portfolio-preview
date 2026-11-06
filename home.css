@@ -172,3 +172,10 @@
 @media(max-width:720px){.client-brand-set .client-brand{width:135px;height:66px}.client-brand-set .client-brand img{width:125px;max-width:125px;height:44px;max-height:44px}.client-brand-set .client-brand img[src*="newbalance-color"]{width:90px}}
 
 .client-brand-set .tahini-brand{position:relative}.client-brand-set .tahini-brand .tahini-wordmark{filter:brightness(0)!important}.client-brand-set .tahini-brand .tahini-icon{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);clip-path:inset(0 0 0 73%);pointer-events:none}
+
+/* Preserve Tahini’s original artwork; expose the white Ebda mark on the light strip. */
+.client-brand-set .ebda-brand img{filter:brightness(0)!important}
+.client-brand-set .newbalance-brand{display:flex;align-items:center;justify-content:center;gap:7px}
+.client-brand-set .newbalance-brand img{width:66px;max-width:66px;height:36px}
+.newbalance-name{font-size:21px;line-height:.95;font-weight:700;letter-spacing:-.05em;color:#cf0a2c;text-align:left}
+@media(max-width:720px){.client-brand-set .newbalance-brand img{width:55px;max-width:55px;height:32px}.newbalance-name{font-size:18px}}
