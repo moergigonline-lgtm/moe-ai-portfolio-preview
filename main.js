@@ -42,3 +42,13 @@
   stage.addEventListener('pointerleave', reset);
   reduceMotion.addEventListener('change', reset);
 })();
+
+// Start the brand strip when it enters view, so the leading brands appear first.
+(() => {
+  const strip = document.querySelector('.client-brand-marquee');
+  if (!strip) return;
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => strip.classList.toggle('is-visible', entry.isIntersecting));
+  }, { threshold: 0.2 });
+  observer.observe(strip);
+})();
